@@ -1,0 +1,52 @@
+<html>
+ <head><title>Fibonacci Series</title></head>
+ <body>
+    <script type="text/javascript">
+    
+ 
+        var var1 = 0;
+        var var2 = 1;
+        var var3;
+ 
+        var num = prompt("Enter the limit to generate fibonacci no",0);
+ 
+        document.write(var1+"<br />");
+        document.write(var2+"<br />");
+ 
+        for(var i=3; i <= num;i++)
+        {
+            var3 = var1 + var2;
+            var1 = var2;
+            var2 = var3;
+ 
+            document.write(var3+"<br />");
+           
+        }
+        function ReverseString(str) { 
+              
+                
+              if(!str || str.length < 2 ||  
+                      typeof str!== 'string') { 
+                  return 'Not valid';  
+              } 
+                
+          
+              const revArray = []; 
+              const length = str.length - 1; 
+                
+             
+              for(let i = length; i >= 0; i--) { 
+                  revArray.push(str[i]); 
+              } 
+                
+        
+              return revArray.join(''); 
+          } 
+          document.write("string reverse is==")  
+          document.write(ReverseString("programming")) 
+
+ 
+    </script>
+ 
+ </body>
+</html>
